@@ -1,0 +1,12 @@
+{
+  "presets": ["react", "env"],
+  "env": {
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  },
+  "plugins": [
+    "transform-decorators-legacy",
+    ["styled-jsx/babel", { "plugins": ["styled-jsx-plugin-postcss"] }]
+  ]
+}
