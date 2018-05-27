@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=local nodemon start.js",
-    "build-dev": "NODE_ENV=development webpack --config webpack.react.dev.js"
+    "dev": "cross-env NODE_ENV=local nodemon start.js",
+    "build-dev": "cross-env NODE_ENV=development webpack --config webpack.react.dev.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -34,6 +34,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
+    "cross-env": "^5.1.6",
     "css-loader": "^0.28.9",
     "jsonwebtoken": "^8.1.0",
     "koa-bodyparser": "^4.2.0",
